@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+<ul class="nav nav-tabs" id="dashboardTabs">
+  <li class="nav-item">
+    <a th:href="@{/courses}">All courses</a>
+  </li>
+  <li class="nav-item">
+    <a th:href="@{/studentCourses}">My enrollment</a>
+  </li>
+  <li class="nav-item">
+    <a th:href="@{/viewStudentProfile}">Student profile</a>
+  </li>
+  <li class="nav-item">
+    <a th:href="@{/logout}">Sign out</a>
+  </li>
+
+</ul>
+
+<th:block th:if="${session.msg}">
+  <p class="text-center fs-4 text-success">[[${session.msg}]]</p>
+  <th:block th:text="${#session.removeAttribute('msg')}"></th:block>
+</th:block>
+
+<div th:if="${student}">
+  <p>First name: <span th:text="${student.firstName}"></span></p>
+  <p>Last name: <span th:text="${student.lastName}"></span></p>
+  <form method="post" th:action="@{/editStudentProfile/{id}(id=${student.id})}">
+    <button type="submit">Edit profile</button>
+  </form>
+</div>
+
+
+</body>
+</html>

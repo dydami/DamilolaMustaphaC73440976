@@ -1,0 +1,10 @@
+INSERT INTO course (title, description, fee) VALUES ('Educational Psychology', 'An introduction to Education Psychology', 2000);
+INSERT INTO course (title, description, fee) VALUES ('Education Studies', 'Gain a wide understanding of educational systems and practices in the UK', 1500);
+INSERT INTO course (title, description, fee) VALUES ('Primary Education', 'Combine independent research with collaborative workshops', 1350);
+INSERT INTO course (title, description, fee) VALUES ('Special Educational Needs', 'Disability and Inclusion Learn how to create inclusive and enabling environments', 1220);
+INSERT INTO course (title, description, fee) VALUES ('Computing and Data Science', 'Improve your English Language ability and study skills, while developing subject specific knowledge', 1600);
+INSERT INTO course (title, description, fee) VALUES ('Data Science', 'Gain an in-depth understanding of core data analysis techniques informed by a deeper knowledge of data principles and practical considerations', 3000);
+INSERT INTO course (title, description, fee) VALUES ('Electronic and Electrical Engineering', 'Gain a thorough grounding in electronics and how to apply, design and maintain them within a system from concept to the final electronic device', 1450);
+INSERT INTO course (title, description, fee) VALUES ('Cyber Security   ', 'Learn to use your knowledge of computer systems and networks to protect businesses and users from malicious attacks in computer security modules', 2300);
+INSERT INTO course (title, description, fee) VALUES ('Robotics and Automation ', 'Learn how to program hardware and software for real-life case studies, such as a discovery robot that will navigate and interact with its environment through a range of sensors, including infra-red, sonar, cameras and GPS', 4000);
+INSERT INTO course (title, description, fee) VALUES ('Creative media technologies', 'Focus on the creative application of technology', 2400);

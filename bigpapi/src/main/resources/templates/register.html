@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="base::layout(~{::section})"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Insert title here</title>
+
+</head>
+<body>
+<section>
+
+  <div class="container p-3">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="card">
+          <div class="card-header text-center fs-4">Register Page</div>
+
+          <th:block th:if="${session.msg}">
+            <p class="text-center fs-4 text-success">[[${session.msg}]]</p>
+            <th:block th:text="${#session.removeAttribute('msg')}"></th:block>
+          </th:block>
+
+
+          <div class="card-body">
+            <form action="createStudent" method="post">
+              <div class="mb-3">
+                <label>Enter Student First Name</label> <input class="form-control"
+                                                               name="firstName"
+                                                               th:value="${student.firstName}" type="text">
+              </div>
+              <div class="mb-3">
+                <label>Enter Student Last Name</label> <input class="form-control"
+                                                              name="lastName"
+                                                              th:value="${student.lastName}" type="text">
+              </div>
+              <div class="mb-3">
+                <label>Enter Email</label> <input class="form-control" name="email"
+                                                  th:value="${student.email}"
+                                                  type="text">
+              </div>
+
+              <div class="mb-3">
+                <label>Enter Password</label> <input class="form-control"
+                                                     name="password"
+                                                     th:value="${student.password}" type="text">
+              </div>
+              <button class="btn btn-primary col-md-12">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</section>
+
+
+</body>
+</html>
