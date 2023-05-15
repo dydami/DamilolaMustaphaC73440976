@@ -21,14 +21,6 @@ Open a web browser and navigate to http://localhost:8080/register to view the li
 
 To create a new student account, click the "Create Student " button and fill in the student details.
 
-To update an existing student record, click the "Edit" button next to the student's name and make the necessary changes.
-
-To delete a student record, click the "Delete" button next to the student's name.
-
-Contributing
-
-Fork the repository.
-
 Create a new branch for your changes.
 
 Make your changes and test them thoroughly.
@@ -36,5 +28,5 @@ Make your changes and test them thoroughly.
 Submit a pull request.
 
 Support
-If you have any questions or issues with the application, please open an issue on GitHub or contact me at dydami@email.com.
+If you have any questions or issues with the application, please open an issue on GitHub or contact me at dydami@email.com
 
