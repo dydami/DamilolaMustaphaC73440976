@@ -36,5 +36,5 @@ Make your changes and test them thoroughly.
 Submit a pull request.
 
 Support
-If you have any questions or issues with the application, please open an issue on GitHub or contact me at yourname@email.com.
+If you have any questions or issues with the application, please open an issue on GitHub or contact me at dydami@email.com.
 
